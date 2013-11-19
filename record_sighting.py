@@ -176,7 +176,7 @@ class RecordSighting(webapp.RequestHandler):
             if self.request.get('address'):
                 sighting.address = self.request.get('address')
                 logging.info("Got addres = '%s'",sighting.address)
-                g = geocoders.Google()
+                g = geocoders.GoogleV3()
                 place, (lat, lon) = g.geocode(sighting.address)  
                 logging.info("%s: %.5f, %.5f" % (place, lat, lon)  )
 
