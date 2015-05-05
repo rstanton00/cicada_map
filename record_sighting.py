@@ -6,7 +6,7 @@ use_library('django', '1.2')
 
 
 from google.appengine.ext.db import GeoPt
-from google.appengine.ext import db
+from google.appengine.ext import ndb
 
 import os
 from google.appengine.ext.webapp import template
